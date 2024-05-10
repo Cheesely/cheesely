@@ -62,18 +62,18 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I'm a software developer, an aspiring writer, and a lifetime learner.
+              I&apos;m a software developer, an aspiring writer, and a lifetime learner.
               I have a big hairy audacious goal: to make the world a better place. I believe that technology can be a force for good,
-              and I think that education is the key to unlocking the potential of every person on this planet. Though I don't know exactly
-              what that looks like yet, I'm just trying to put one foot in front of the other and see where it takes me. Its a big goal, but I beleive 
+              and I think that education is the key to unlocking the potential of every person on this planet. Though I don&apos;t know exactly
+              what that looks like yet, I&apos;m just trying to put one foot in front of the other and see where it takes me. Its a big goal, but I beleive 
               that big goals are worth pursuing. Failure is just a stepping stone to success.
             </p>
             <p>
-              When I'm not coding or scheming on how I want to acheive my big nebulous goal, I'm listening to audiobooks, reading comics, writing, playing Dungeons and Dragons, or surfing. Some of my 
+              When I&apos;m not coding or scheming on how I want to acheive my big nebulous goal, I&apos;m listening to audiobooks, reading comics, writing, playing Dungeons and Dragons, or surfing. Some of my 
               favourite books are Jitterbug Perfume, Daring Greatly, An Immense World, How Emotions are Made, and The Glass Castle. 
             </p>
             <p>
-              I believe in the strength of vulnerability, the power of empathy, and the importance of living a whole hearted life. Clearly, I'm a Brene Brown nerd.
+              I believe in the strength of vulnerability, the power of empathy, and the importance of living a whole hearted life. Clearly, I&apos;m a Brene Brown nerd.
             </p>
           </div>
         </div>
