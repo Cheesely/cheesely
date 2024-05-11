@@ -12,7 +12,7 @@ const projects = [
   {
     name: 'Change the world by revolutionizing the way we learn',
     description:
-      'Building an educational framework that utilizes the full human potentialb shifting the paradigm from role-based learning to goal based learning.',
+      'Building an educational framework that utilizes the full human potential shifting the paradigm from role-based learning to goal based learning.',
     logo: logoEducation,
     status: 'In Research'
   },
@@ -69,7 +69,7 @@ export default function Projects() {
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              
+              {project.name}
             </h2>
             <Card.Description>{project.description}</Card.Description>
             <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
