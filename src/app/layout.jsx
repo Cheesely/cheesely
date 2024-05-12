@@ -10,7 +10,7 @@ export const metadata = {
       'Chelsey Foster - Software developer, dreamer, and lifetime learner.',
   },
   description:
-    'I’m Chelsey Foster. I live in Victoria, BC. And I want to change the world.',
+    'I’m Chelsey Foster. I live in Victoria, BC. And I want to make a difference.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
