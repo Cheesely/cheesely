@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
@@ -7,14 +8,16 @@ import logoEducation from '@/images/logos/lightbulb.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoRecipe from '@/images/logos/recipe.svg'
 
 const projects = [
   {
-    name: 'Change the world by revolutionizing the way we learn',
+    name: 'Recipe Prototype',
     description:
-      'Building an educational framework that utilizes the full human potential shifting the paradigm from role-based learning to goal based learning.',
-    logo: logoEducation,
-    status: 'In Research'
+      'A working prototype for how I would like to see recipes presented. This is a prototype for a recipe for Chana Masala. The next step for me is to turn this prototype into a react app using some figma plugins!',
+    logo: logoRecipe,
+    status: 'Prototype',
+    link: 'https://www.figma.com/proto/PQPV2rhp9loOUIdTjpRVzI/Chana-Masala-Recipe?page-id=0%3A1&node-id=6-231&viewport=518%2C-111%2C0.42&t=TW3849QUrnDmjmq2-1&scaling=min-zoom&content-scaling=fixed'
   },
   {
     name: 'Ruby on Rails Deep Dive',
@@ -69,12 +72,19 @@ export default function Projects() {
               />
             </div>
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              {project.name}
+              {project.name}<span className="ml-2 bg-teal-100 text-teal-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-lg dark:bg-teal-900 dark:text-teal-300">{project.status}</span>
             </h2>
             <Card.Description>{project.description}</Card.Description>
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-              <span className="ml-2">{project.status}</span>
-            </p>
+            <span className="ml-2">
+
+              {project.link && (
+                <Link href={project.link} legacyBehavior>
+                  <a className="underline relative z-10 mt-6 flex text-sm font-medium text-teal-500 hover:text-teal-900 dark:text-teal-400 dark:hover:text-teal-200">
+                    View Prototype
+                  </a>
+                </Link>
+              )}
+            </span>
           </Card>
         ))}
       </ul>
