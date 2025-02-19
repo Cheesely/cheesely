@@ -9,6 +9,7 @@ import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoRecipe from '@/images/logos/recipe.svg'
+import logoTimer from '@/images/logos/timer.svg'
 
 const projects = [
   {
@@ -32,6 +33,14 @@ const projects = [
       'An app with a scrolling feed where you can explore posts and identify groups working on projects that you can join. These groups often share educational content aimed at solving real-world problems',
     logo: logoPlanetaria,
     status: 'In Design'
+  },
+  {
+    name: 'Contractions App',
+    description:
+      'An app for women to be able to track their contractions that is well suited for women experiencing bouts of prodormal labour earlier in the third trimester and want to keep track of these bouts over time.',
+    logo: logoTimer,
+    status: 'In Progress',
+    link: 'https://contractions-five.vercel.app/'
   }
 ]
 
@@ -76,11 +85,10 @@ export default function Projects() {
             </h2>
             <Card.Description>{project.description}</Card.Description>
             <span className="ml-2">
-
               {project.link && (
                 <Link href={project.link} legacyBehavior>
                   <a className="underline relative z-10 mt-6 flex text-sm font-medium text-teal-500 hover:text-teal-900 dark:text-teal-400 dark:hover:text-teal-200">
-                    View Prototype
+                    {project.status === 'Prototype' ? 'View Prototype' : 'View App'}
                   </a>
                 </Link>
               )}
